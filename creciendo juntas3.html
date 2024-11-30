@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creciendo Juntas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fefefe;
+            margin: 0;
+            padding: 0;
+            color: #444;
+        }
+
+        header {
+            background-color: #ffe4e1; /* Rosa pastel */
+            color: #444;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background-color: #e6e6fa; /* Lavanda */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #6b5b95;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #6b5b95;
+        }
+
+        .program-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .program-details li {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #fffaf0; /* Beige pastel */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .program-details img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .cta {
+            background-color: #d8bfd8; /* Lila pastel */
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+
+        .cta a {
+            text-decoration: none;
+            background-color: #b0e0e6; /* Azul pastel */
+            color: #444;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .cta a:hover {
+            background-color: #87ceeb; /* Azul claro */
+        }
+
+        footer {
+            background-color: #ffe4e1;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Creciendo Juntas</h1>
+        <p>Empoderando Sueños, Construyendo Futuro</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#about">Acerca del Proyecto</a>
+        <a href="#programs">Programas</a>
+        <a href="#join">Únete</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <!-- Sección Acerca del Proyecto -->
+    <section id="about">
+        <h2>Acerca del Proyecto</h2>
+        <p>"Creciendo Juntas" es una iniciativa para empoderar a mujeres en comunidades vulnerables mediante oportunidades de capacitación, emprendimiento y apoyo social.</p>
+        <img src="portada.JPG" alt="Mujeres colaborando" style="width: 80%; margin-top: 20px; border-radius: 10px;">
+    </section>
+
+    <!-- Sección Programas -->
+    <section id="programs">
+        <h2>Programas</h2>
+        <div class="program-details">
+            <ul>
+                <li>
+                    <img src="OIP.JFIF" alt="Elaboración de Piñatas">
+                    <div>
+                        <strong>Elaboración de Piñatas:</strong>
+                        <p>Aprende a crear y decorar piñatas de diferentes estilos, ideal para iniciar tu propio negocio.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="maq.JFIF" alt="Cursos de Maquillaje">
+                    <div>
+                        <strong>Cursos de Maquillaje:</strong>
+                        <p>Técnicas básicas y avanzadas para embellecer y destacar las facciones.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="repo.JPG" alt="Repostería">
+                    <div>
+                        <strong>Repostería:</strong>
+                        <p>Descubre recetas deliciosas y técnicas de decoración para postres y pasteles.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="off.JFIF" alt="Paquetería Office">
+                    <div>
+                        <strong>Paquetería Office:</strong>
+                        <p>Manejo de herramientas como Word, Excel y PowerPoint para mejorar tus oportunidades laborales.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección CTA -->
+    <div class="cta">
+        <h2>¿Quieres ser parte del cambio?</h2>
+        <a href="#join">Únete al Proyecto</a>
+    </div>
+
+    <!-- Sección de Registro -->
+    <section id="join">
+        <h2>Formulario de Registro</h2>
+        <form>
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" placeholder="Tu edad" required>
+
+            <label for="program">Programa de interés:</label>
+            <select id="program" name="program" required>
+                <option value="">Selecciona un programa</option>
+                <option value="pinatas">Elaboración de Piñatas</option>
+                <option value="maquillaje">Cursos de Maquillaje</option>
+                <option value="reposteria">Repostería</option>
+                <option value="office">Paquetería Office</option>
+            </select>
+
+            <button type="submit">Enviar Registro</button>
+        </form>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Email: contacto@creciendojuntas.org</p>
+        <p>Teléfono: +52 123 456 7890</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Creciendo Juntas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
